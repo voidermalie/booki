@@ -1,0 +1,355 @@
+/*****************************************FONTS, POLICE**************************************/
+
+* {
+  font-family: 'Raleway', Raleway, Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+/********************MEDIA QUERY********************/
+/*
+@media screen and (max-width: 1280px) {
+    /* Rédigez vos propriétés CSS ici */
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/***********************************************HEADER*****************************************/
+
+#container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+#logo img {
+  width: 30%;
+  margin: 30px 30px 10px 30px;
+  padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display:  flex;
+}
+
+nav li {
+    margin-right: 15px;
+    align-items: flex-end;
+    padding: 0 10px;
+    color: #878787;
+}
+
+#nav-hotels {
+  padding-right: 40px;
+}
+
+#nav-activities {
+  padding-right: 10px;
+}
+
+#main-nav a {
+  color:#878787;
+}
+
+#main-nav a:hover {
+  color: #0065FC;
+  border-top: 2.5px #0065FC solid;
+  padding-top: 30px;
+}
+
+/******************************************SEARCH**********************************************/
+
+#container-search {
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+}
+
+#intro h1 {
+  margin-bottom: 0;
+}
+
+#intro p {
+  margin-top: 3px;
+}
+
+/************SEARCHBOX******************************/
+
+
+#searchbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#searchbox i {
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  padding: 13px;
+}
+
+.search-form {
+  height: 50px;
+  align-self: stretch;
+}
+
+input {
+  position: relative;
+  right: 30px;
+  /*
+  display: none;
+  */
+}
+
+label {
+  border: solid 1px #F2F2F2;
+  padding: 13px 60px 13px 13px;
+  font-weight: bold;
+}
+
+
+#search-btn {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  padding: 13px;
+  border: 0.5px solid #0065FC;
+  border-radius: 0 10px 10px 0;
+}
+
+/*******************INFO*************************/
+
+#info {
+  display: flex;
+  align-items: baseline;
+}
+
+#info i {
+  color: #0065FC;
+  border: 1px solid #F2F2F2;
+  font-size: 10px;
+  font-weight: 700;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  padding: 8px;
+  text-align: center;
+  line-height: 2px;
+  align-self: baseline;
+}
+
+#info p {
+  display: flex;
+  margin-left: 6px;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+/**********FILTERS**********************/
+
+#filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 52%;
+}
+
+#filters i {
+  color: #0065FC;
+  background-color: #DEEBFF;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  line-height: 18px;
+  position: relative;
+  right: 10px;
+}
+
+.filters-item {
+  display: flex;
+  align-items: center;
+  border: 2.5px solid #F2F2F2;
+  border-radius: 25px;
+  padding: 1px 15px 1px 2px;
+}
+
+.filters-item p {
+  font-weight: bold;
+  color: black;
+}
+
+.filters-item i {
+  align-items: flex-end;
+}
+
+/**********************************************HOTELS*****************************************/
+
+#container-all_hotels {
+  display: flex;
+  justify-content: space-between;
+}
+
+#hotels_Marseille, #hotels_most_popular {
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px;
+}
+
+#hotels_Marseille {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 30px 25px 30px;
+  margin-left: 30px;
+  width: 60%;
+}
+
+#more {
+  font-size: 16px;
+  font-weight: 600;
+  color:#000000;
+}
+
+/***************************CARD********************/
+
+.content_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card_Marseille {
+  width: 30%;
+  height: 30%;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #878787;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.img_Marseille {
+  width: 60%;
+  object-fit: cover;
+  box-shadow: 1px 1px 5px #878787;
+}
+
+#hotels_most_popular {
+  padding: 1.5%;
+  width: 25%;
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:visited {
+  color: #000000;
+}
+/********************STARS********************/
+
+.fa-star {
+  color: #0065FC;
+}
+
+.rating {
+  color: #F2F2F2;
+}
+
+.title {
+  color: black;
+}
+
+/********************************************MOST POPULAR*************************************/
+
+#hotels_most_popular {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_most_popular {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.img_popular {
+  width: 80px;
+  height: 75px;
+}
+
+.card_popular {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/**********************************************ACTIVITIES**************************************/
+
+#activities {
+  margin-left: 35px;
+}
+
+/************************************************FOOTER*****************************************/
+
+footer {
+  background-color: #F2F2F2;
+  width: 100%; 
+  display: flex;
+}
