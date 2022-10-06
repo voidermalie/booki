@@ -169,7 +169,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 55%;
+  width: 65%;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -356,7 +356,7 @@ label {
 }
 
 .stars_popular {
-  align-content: flex-end;
+  align-items: flex-end;
 }
 
 /************LIENS*************/
