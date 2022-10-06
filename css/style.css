@@ -25,6 +25,11 @@ h3 {
   color: black;
 }
 
+ul {
+  color: black;
+  font-size: 15px;
+}
+
 /********************MEDIA QUERY********************/
 /*
 @media screen and (max-width: 1280px) {
@@ -42,30 +47,30 @@ h3 {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
+main {
+  display: block;
+}
 
 /***********************************************HEADER*****************************************/
 
 #container-header {
   display: flex;
   justify-content: space-between;
+  margin: 0 30px;
 }
 
 #main-nav {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
-  margin-right: 45px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #logo img {
   width: 27%;
-  margin: 30px 0 20px 45px;
+  margin: 30px 0 20px 0;
   padding: 0;
 }
 
@@ -74,38 +79,21 @@ nav ul {
     display:  flex;
 }
 
-nav li {
-    margin-right: 15px;
-    align-items: flex-end;
-    padding: 0 10px;
-    color: #878787;
-}
-
-#nav-hotels {
-
-  padding-right: 30px;
-}
-
-#nav-activities {
-  padding-right: 10px;
-}
-
-
 #main-nav a {
   color:#878787;
+  padding: 0 25px;
 }
 
 #main-nav a:hover {
   color: #0065FC;
   border-top: 2.5px #0065FC solid;
-  padding: 0 15px;
   padding-top: 30px;
 }
 
 /******************************************SEARCH**********************************************/
 
 #container-search {
-  margin-left: 45px;
+  margin: 0 30px;
   display: flex;
   flex-direction: column;
 }
@@ -116,7 +104,7 @@ nav li {
 }
 
 #intro h1 {
-  margin-bottom: 0;
+  margin-bottom: 0.5%;
 }
 
 #intro p {
@@ -146,11 +134,14 @@ nav li {
 
 input {
   height: 38px;
+  border: 2px solid #F2F2F2;
+  outline: none;
+  font-weight: bold;
+  padding-left: 5%;
 }
 
 input::placeholder {
   font-weight: bold;
-  color: black; /*not changing*/
 }
 
 label {
@@ -158,45 +149,18 @@ label {
   border: solid 1px #F2F2F2;
   padding: 13px 60px 13px 13px;
   font-weight: bold;
+  color: black;
 }
-
-
 
 #search-btn {
   background-color: #0065FC;
   color: white;
-  font-weight: bold;
-  padding: 13px;
-  border: 0.5px solid #0065FC;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 12.5px;
+  border: 2px solid #0065FC;
   border-radius: 0 10px 10px 0;
-}
-
-/*******************INFO*************************/
-
-#info {
-  display: flex;
-  align-items: baseline;
-}
-
-#info i {
-  color: #0065FC;
-  border: 1px solid #F2F2F2;
-  font-size: 10px;
-  font-weight: 700;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  padding: 8px;
-  text-align: center;
-  line-height: 2px;
-  align-self: baseline;
-}
-
-#info p {
-  display: flex;
-  margin-left: 6px;
-  align-items: flex-end;
-  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 /**********FILTERS**********************/
@@ -229,6 +193,7 @@ label {
   border: 2.5px solid #F2F2F2;
   border-radius: 25px;
   padding: 0.5px 15px 1px 1px;
+  cursor: pointer;
 }
 
 .filters-item p {
@@ -240,45 +205,76 @@ label {
   align-items: flex-end;
 }
 
+/***CLICK EFFECT***/
+
+#filters i:hover {
+  color: pink;
+}
+
+.filters-item:hover {
+  position: relative;
+  bottom: 3px;
+  box-shadow: 3px 3px 10px gainsboro;
+}
+
+/*******************INFO*************************/
+
+#info {
+  display: flex;
+  align-items: baseline;
+  margin-top: 20px;
+}
+
+#info i {
+  color: #0065FC;
+  border: 1px solid #F2F2F2;
+  font-size: 10px;
+  font-weight: 700;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  padding: 8px;
+  text-align: center;
+  line-height: 2px;
+  align-self: baseline;
+}
+
+#info p {
+  display: flex;
+  margin-left: 6px;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
 /**********************************************HOTELS*****************************************/
 
 #container-all_hotels {
+  margin: 0 30px;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-
-  height: 550px;
-  
+  gap: 2%;
 }
 
 #hotels_Marseille, #hotels_most_popular {
   background-color: #F2F2F2;
-  border: 1px solid #F2F2F2;
   border-radius: 15px;
 }
 
 #hotels_Marseille {
   display: flex;
   flex-direction: column;
-  padding: 20px 30px 25px 30px;
-  margin-left: 45px;
-  width: 55%;
+  flex-basis: 60%;
+  padding: 2%;
 }
 
 #hotels_most_popular {
   display: flex;
   flex-direction: column;
   align-content: center;
-}
-
-#hotels_most_popular {
-  padding: 1.5%;
-  width: 25%;
-  margin-right: 45px;
+  flex-basis: 33%;
+  padding: 2%;
 }
 
 #more {
-  margin-top: 0;
   font-size: 16px;
   font-weight: 600;
   color:#000000;
@@ -290,27 +286,27 @@ label {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: flex-start;
+  align-content: center;
+  padding: 0;
   margin: 0;
+  gap: 2%;
 }
 
 .card_Marseille {
-  width: 25%;
+  width: 29%;
   height: 30%;
   text-decoration: none;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 1px 1px 10px #878787;
-  padding: 2px;
-  margin: 10px;
+  box-shadow: 1px 1px 10px gainsboro;
 }
 
 .img_Marseille {
   width: 100%;
   height: 60%;
   object-fit: cover;
-  box-shadow: 1px 1px 5px #878787;
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px 20px 0 0;
+  padding: 3px;
   box-sizing: border-box;
 }
 
@@ -319,14 +315,48 @@ label {
   padding: 0;
 }
 
-/*****************MOST POPULAR********************/
-/*why not working*/
-.card_popular p {
-  margin-top: 0;
+/********************************************MOST POPULAR*************************************/
+
+.title_most_popular {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.results_most_popular {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+
+.card_popular {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: 40%;
+}
+
+.content_card_popular {
+  display: flex;
+}
+
+.img_popular {
+  width: 33%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 15px 0 0 15px;
+}
+
+.text_popular {
+  display: flex;
+  flex-direction: column;
 }
 
 .stars_popular {
-  align-items: flex-end;
+  align-content: flex-end;
 }
 
 /************LIENS*************/
@@ -343,6 +373,7 @@ ul {
 a:visited {
   color: #000000;
 }
+
 /********************STARS********************/
 
 .fa-star {
@@ -357,50 +388,55 @@ a:visited {
   color: black;
 }
 
-/********************************************MOST POPULAR*************************************/
-
-
-.title_most_popular {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.card_popular {
-  display: flex;
-  background-color: white;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  width: 100%;
-  height: 25%;
-}
-
-.img_popular {
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
 /**********************************************ACTIVITIES**************************************/
 
 #activities {
-  margin-left: 45px;
+  margin: 30px 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 #results_activities {
   display: flex;
+  box-sizing: border-box;
+  gap: 3%;
 }
 
 .card_activities {
-  width: 15%;
-  height: 100%;
+  border: 0px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px gainsboro;
+  flex-basis: 25%;
+  max-height: 300px;
+  align-items: flex-end;
 }
 
 .img_activities {
   width: 100%;
-  height: 60%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
 }
+
+.duo-card_activities {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-basis: 25%;
+}
+
+.card_activities_2 {
+  flex-basis: 50%;
+  border: 0px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px gainsboro;
+}
+
+.duo-card_activities .img_activities {
+  height: 30%;
+  object-fit: cover;
+}
+
 
 /************************************************FOOTER*****************************************/
 
@@ -408,9 +444,378 @@ footer {
   background-color: #F2F2F2;
   width: 100%; 
   display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  
+  position: relative;
+  top: 100px;
+  z-index: 1;
+  
+}
+
+.footerblock {
   padding: 30px;
+  flex-basis: 30%;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 13px;
 }
 
 footer li {
-  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+/*********************************NORMALIZE CSS***********************************************/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/*
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+*/
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
 }
