@@ -252,6 +252,7 @@ label {
   margin: 0 30px;
   display: flex;
   gap: 2%;
+  height: 500px;
 }
 
 #hotels_Marseille, #hotels_most_popular {
@@ -272,12 +273,14 @@ label {
   align-content: center;
   flex-basis: 33%;
   padding: 2%;
+  height: min-content;
 }
 
 #more {
   font-size: 16px;
   font-weight: 600;
   color:#000000;
+  margin-top: auto;
 }
 
 /*****************CARD********************/
@@ -287,14 +290,18 @@ label {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  padding: 0;
-  margin: 0;
-  gap: 2%;
+  gap: 15px;
+}
+
+.link_Marseille {
+ width: 30%;
+ display: flex;
+ aspect-ratio: 3/2;
 }
 
 .card_Marseille {
-  width: 29%;
-  height: 30%;
+  width: 100%;
+  aspect-ratio: 4/3;
   text-decoration: none;
   background-color: white;
   border-radius: 20px;
@@ -326,10 +333,10 @@ label {
 .results_most_popular {
   display: flex;
   flex-direction: column;
-  gap: 2%;
+  gap: 15px;
 }
 
-.card_popular {
+.link_popular {
   display: flex;
   background-color: white;
   border-radius: 10px;
@@ -339,6 +346,8 @@ label {
 
 .content_card_popular {
   display: flex;
+  width: 100%;
+  aspect-ratio: 3/1;
 }
 
 .img_popular {
@@ -394,36 +403,42 @@ a:visited {
   margin: 30px 30px;
   display: flex;
   flex-direction: column;
+  min-height: max-content;
 }
 
 #results_activities {
   display: flex;
   box-sizing: border-box;
   gap: 3%;
+  margin-top: 10px;
 }
 
 .card_activities {
   display: flex;
   flex-direction: column;
   flex-basis: 25%;
-  max-height: 400px;
   border: 0px solid white;
   border-radius: 20px;
   box-shadow: 0px 2px 10px gainsboro;
+}
+
+.content_card_activities {
+  width: 100%;
+  height: 100%;
 }
 
 .img_activities {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
   width: 100%;
-  flex-basis: 90%;
+  height: 90%;
 }
 
-/**not working
-.card_activities h3 {
-  align-items: flex-end;
+
+.card_activities h3, .duo-card_activities h3 {
+  padding-left: 10px;
 }
-*/
+
 
 /***DUO***/
 
@@ -433,6 +448,7 @@ a:visited {
   width: 100%;
   flex-basis: 25%;
   max-height: 400px;
+  gap: 30px;
 }
 
 .card_activities_2 {
@@ -445,14 +461,11 @@ a:visited {
 }
 
 .duo-card_activities .img_activities {
-  height: 30%;
+  height: 80%;
   object-fit: cover;
   width: 100%;
 }
 
-.content_card_activities h3, .content_card_activities_2 h3 {
-  align-items: flex-end;
-}
 
 /************************************************FOOTER*****************************************/
 
@@ -675,18 +688,6 @@ button,
 select { /* 1 */
   text-transform: none;
 }
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
 /**
  * Remove the inner border and padding in Firefox.
  */
@@ -768,34 +769,6 @@ textarea {
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
 }
 
 /* Interactive
