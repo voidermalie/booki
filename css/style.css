@@ -382,6 +382,13 @@ a:visited {
   color: #000000;
 }
 
+/*****CLICK EFFECT*****/
+
+.link_Marseille:hover, .link_popular:hover {
+  opacity: 0.7;
+}
+
+
 /********************STARS********************/
 
 .fa-star {
