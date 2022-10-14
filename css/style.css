@@ -5,29 +5,29 @@
 }
 
 p {
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 h1 {
-  font-size: 19px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: black;
 }
 
 h3 {
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: bold;
   color: black;
 }
 
 ul {
   color: black;
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 
 /********************MEDIA QUERY********************/
@@ -117,8 +117,6 @@ nav ul {
 #searchbox {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 #searchbox i {
@@ -222,7 +220,6 @@ label {
 #info {
   display: flex;
   align-items: baseline;
-  margin-top: 20px;
 }
 
 #info i {
@@ -251,8 +248,7 @@ label {
 #container-all_hotels {
   margin: 0 30px;
   display: flex;
-  gap: 2%;
-  height: 500px;
+  gap: 3%;
 }
 
 #hotels_Marseille, #hotels_most_popular {
@@ -271,13 +267,15 @@ label {
   display: flex;
   flex-direction: column;
   align-content: center;
-  flex-basis: 33%;
+  flex: 1 1 29%;
   padding: 2%;
+  
   height: min-content;
+  
 }
 
 #more {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color:#000000;
   margin-top: auto;
@@ -290,13 +288,13 @@ label {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  gap: 15px;
+  gap: 25px;
 }
 
 .link_Marseille {
  width: 30%;
  display: flex;
- aspect-ratio: 3/2;
+ aspect-ratio: 4/3;
 }
 
 .card_Marseille {
@@ -317,9 +315,10 @@ label {
   box-sizing: border-box;
 }
 
-.card_Marseille h3, p, i {
+.card_Marseille h3, .card_Marseille p {
   margin: 0;
   padding: 0;
+  padding-left: 7%;
 }
 
 /********************************************MOST POPULAR*************************************/
@@ -390,7 +389,7 @@ a:visited {
 }
 
 .rating {
-  color: #F2F2F2;
+  color: #DBDBDB;
 }
 
 .title {
@@ -403,7 +402,6 @@ a:visited {
   margin: 30px 30px;
   display: flex;
   flex-direction: column;
-  min-height: max-content;
 }
 
 #results_activities {
@@ -427,6 +425,10 @@ a:visited {
   height: 100%;
 }
 
+.content_card_activities_2 {
+  width: 100%;
+}
+
 .img_activities {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
@@ -434,11 +436,10 @@ a:visited {
   height: 90%;
 }
 
-
-.card_activities h3, .duo-card_activities h3 {
+#activities h3 {
   padding-left: 10px;
+  margin-bottom: auto;
 }
-
 
 /***DUO***/
 
@@ -447,7 +448,7 @@ a:visited {
   flex-direction: column;
   width: 100%;
   flex-basis: 25%;
-  max-height: 400px;
+  
   gap: 30px;
 }
 
@@ -457,7 +458,7 @@ a:visited {
   border-radius: 20px;
   box-shadow: 0px 2px 10px gainsboro;
   display: flex;
-  max-height: 200px;
+  
 }
 
 .duo-card_activities .img_activities {
