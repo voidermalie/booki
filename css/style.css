@@ -375,7 +375,7 @@ label {
 
 .text-popular h3, .text-popular p {
   margin: 0;
-  padding: 5%;
+  padding: 5px 0 0 5px;
 }
 
 /************LIENS*************/
