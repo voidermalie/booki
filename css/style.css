@@ -80,7 +80,6 @@ nav ul {
 }
 
 #main-nav a {
-  color:#878787;
   padding: 0 25px;
 }
 
@@ -585,9 +584,9 @@ footer li {
   }
   #main-nav a {
     display: flex;
-    border-bottom: 2px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
     padding: 0 60px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
   #main-nav a {
     flex-basis: 50%;
