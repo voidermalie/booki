@@ -458,6 +458,7 @@ a:visited {
   border: 0px solid white;
   border-radius: 20px;
   box-shadow: 0px 2px 10px gainsboro;
+  height: 400px;
 }
 
 .card-activities {
@@ -489,6 +490,7 @@ a:visited {
   width: 100%;
   flex-basis: 25%;
   gap: 30px;
+  height: 400px;
 }
 
 .link-activities-2 {
@@ -497,6 +499,7 @@ a:visited {
   border-radius: 20px;
   box-shadow: 0px 2px 10px gainsboro;
   display: flex;
+  height: 175px;
   
 }
 
@@ -570,20 +573,20 @@ footer li {
   }
   #main-nav {
     justify-content: space-around;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
   }
   #main-nav ul {
     padding-left: 0;
     margin-top: 0;
   }
-
   #main-nav li {
     display: flex;
   }
   #main-nav a {
     display: flex;
     border-bottom: 2px solid #F2F2F2;
+    padding: 0 60px;
     padding-bottom: 10px;
   }
   #main-nav a {
@@ -679,6 +682,12 @@ footer li {
   }
   #results-activities {
     flex-direction: column;
+  }
+  .duo-card-activities {
+    flex-basis: auto;
+  }
+  .link-activities {
+
   }
 
   /*footer*/
