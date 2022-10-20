@@ -104,7 +104,7 @@ nav ul {
 }
 
 #intro h1 {
-  margin-bottom: 0.5%;
+  margin-bottom: 0.5px;
 }
 
 #intro p {
@@ -135,7 +135,7 @@ input {
   border: 2px solid #F2F2F2;
   outline: none;
   font-weight: bold;
-  padding-left: 5%;
+  padding-left: 10px;
 }
 
 input::placeholder {
@@ -248,7 +248,7 @@ label {
 #container-all-hotels {
   margin: 0 40px;
   display: flex;
-  gap: 3%;
+  gap: 30px;
   min-height: 100%;
 }
 
@@ -261,7 +261,7 @@ label {
   display: flex;
   flex-direction: column;
   flex-basis: 60%;
-  padding: 2%;
+  padding: 20px;
 }
 
 #hotels-most-popular {
@@ -269,7 +269,7 @@ label {
   flex-direction: column;
   align-content: center;
   flex: 1 1 29%;
-  padding: 2%;
+  padding: 20px;
 }
 
 #more {
@@ -277,11 +277,11 @@ label {
   font-weight: 600;
   color:#000000;
   margin-top: auto;
-  padding: 2%;
+  padding: 20px;
 }
 
 #container-all-hotels h2 {
-  padding-left: 2%;
+  padding-left: 20px;
 }
 
 /*****************CARD********************/
@@ -292,7 +292,7 @@ label {
   justify-content: center;
   align-content: center;
   gap: 25px;
-  padding: 20px 0;
+  margin: 20px 0;
 }
 
 .link-Marseille {
@@ -321,8 +321,8 @@ label {
 
 .card-Marseille h3, .card-Marseille p {
   margin: 0;
-  padding: 1%;
-  padding-left: 7%;
+  padding: 2px;
+  padding-left: 15px;
 }
 
 /********************************************MOST POPULAR*************************************/
@@ -336,15 +336,17 @@ label {
 .results-most-popular {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  gap: 25px;
   padding: 20px 0;
+  height: 100%;
 }
 
 .link-popular {
   display: flex;
   background-color: white;
   border-radius: 10px;
-  width: 100%;
+  width: 90%;
   height: 40%;
 }
 
@@ -355,7 +357,7 @@ label {
 }
 
 .img-popular {
-  width: 33%;
+  width: 40%;
   height: 100%;
   object-fit: cover;
   box-sizing: border-box;
@@ -366,16 +368,17 @@ label {
 .text-popular {
   display: flex;
   flex-direction: column;
+  width: 60%;
 }
 
 .text-popular .stars-popular {
   margin-top: auto;
-  padding-bottom: 5%;
+  padding-bottom: 15px;
 }
 
 .text-popular h3, .text-popular p {
   margin: 0;
-  padding: 5px 0 0 5px;
+  padding: 15px 0 0 15px;
 }
 
 /************LIENS*************/
@@ -412,6 +415,7 @@ a:visited {
 
 .title {
   color: black;
+  padding-right: 20px;
 }
 
 /**********************************************ACTIVITIES**************************************/
@@ -425,7 +429,7 @@ a:visited {
 #results-activities {
   display: flex;
   box-sizing: border-box;
-  gap: 3%;
+  gap: 30px;
   margin-top: 10px;
   min-height: 100%;
 }
