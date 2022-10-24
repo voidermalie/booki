@@ -6,10 +6,11 @@
       <meta name="title" content="Booki - site de réservation de voyage">
       <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve, en plein centre ville ou en pleine nature">
       <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/normalize.css"
+      <link rel="stylesheet" href="css/normalize.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600;700&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/logo/Booki.png">
       <script src="https://kit.fontawesome.com/df8ecaf525.js" crossorigin="anonymous"></script>
       <title>Booki</title>
     </head>
@@ -22,7 +23,7 @@
         </div>
         <nav id="main-nav">
           <ul>
-            <li id="nav-hotels"><a href="#container-all_hotels">Hébergements</a></li>
+            <li id="nav-hotels"><a href="#container-all-hotels">Hébergements</a></li>
             <li id="nav-activities"><a href="#activities">Activités</a></li>
           </ul>
         </nav>        
@@ -45,8 +46,10 @@
               <input type="text" name="city" id="city" maxlength="20" placeholder="Marseille, France">
             </p>
           </form>
-          <button id="search-btn">Rechercher</button>
-          <i class="icon-search fas fa-search"></i>
+          <button id="search-btn">
+            <span id="btn-rechercher">Rechercher</span>
+            <span id="loupe"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </button>
         </div>
 
         <div id="filters">
@@ -57,7 +60,7 @@
           </div>
           <div class="filters-item">
             <i class="fa-solid fa-child-reaching"></i>
-            <p>Familiale</p>
+            <p>Familial</p>
           </div>
           <div class="filters-item">
             <i class="fa-solid fa-heart"></i>
@@ -88,7 +91,7 @@
             <div class="results-Marseille">
               <a class="link-Marseille" href="#">
                 <article class="card-Marseille">
-                  <img class="img-Marseille" src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre à l'Auberge La Cannebière">
+                  <img class="img-Marseille" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre à l'Auberge La Cannebière">
                   <div class="text-Marseille">
                     <h3>Auberge La Cannebière</h3>
                     <p>Nuit à partir de 25<strong>€</strong></p>
@@ -105,7 +108,7 @@
               </a>
               <a class="link-Marseille" href="#">
                 <article class="card-Marseille">
-                  <img class="img-Marseille" src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre dans l'Hôtel du port">
+                  <img class="img-Marseille" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre dans l'Hôtel du port">
                   <div class="text-Marseille">
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 52<strong>€</strong></p>
@@ -121,7 +124,7 @@
               </a>
               <a class="link-Marseille" href="#">
                 <article class="card-Marseille">
-                  <img class="img-Marseille" src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre à l'Hôtel Les mouettes"> 
+                  <img class="img-Marseille" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre à l'Hôtel Les mouettes"> 
                   <div class="text-Marseille">
                     <h3>Hôtel Les mouettes</h3>
                     <p>Nuit à partir de 76<strong>€</strong></p>
@@ -137,7 +140,7 @@
               </a> 
               <a class="link-Marseille" href="#">
                 <article class="card-Marseille">
-                  <img class="img-Marseille" src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre à l'Hôtel de la mer"> 
+                  <img class="img-Marseille" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre à l'Hôtel de la mer"> 
                   <div class="text-Marseille">
                     <h3>Hôtel de la mer</h3>
                     <p>Nuit à partir de 46<strong>€</strong></p>
@@ -153,7 +156,7 @@
               </a> 
               <a class="link-Marseille" href="#">
                 <article class="card-Marseille">
-                  <img class="img-Marseille" src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre à l'Auberge Le Panier"> 
+                  <img class="img-Marseille" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre à l'Auberge Le Panier"> 
                   <div class="text-Marseille">
                     <h3>Auberge Le Panier</h3>
                     <p>Nuit à partir de 23<strong>€</strong></p>
@@ -169,7 +172,7 @@
               </a> 
               <a class="link-Marseille" href="#">
                 <article class="card-Marseille">
-                  <img class="img-Marseille" src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre à l'Hôtel chez Amina"> 
+                  <img class="img-Marseille" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre à l'Hôtel chez Amina"> 
                   <div class="text-Marseille">
                     <h3>Hôtel chez Amina</h3>
                     <p>Nuit à partir de 96<strong>€</strong></p>
@@ -195,7 +198,7 @@
             <div class="results-popular">
               <a class="link-popular" href="#">
                 <article class="card-popular">
-                  <img class="img-popular" src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre à l'Hôtel Le soleil du matin">
+                  <img class="img-popular" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre à l'Hôtel Le soleil du matin">
                   <div class="text-popular">
                     <h3>Hôtel Le soleil du matin</h3>
                     <p>Nuit à partir de 128<strong>€</strong></p>
@@ -212,7 +215,7 @@
 
               <a class="link-popular" href="#">
                 <article class="card-popular">
-                  <img class="img-popular" src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre Au cœur de l'eau Chambre d'Hôtes">
+                  <img class="img-popular" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre Au cœur de l'eau Chambre d'Hôtes">
                   <div class="text-popular">
                     <h3>Au cœur de l'eau Chambres d'hôtes</h3>
                     <p>Nuit à partir de 71<strong>€</strong></p>
@@ -229,7 +232,7 @@
 
               <a class="link-popular" href="#">
                 <article class="card-popular">
-                  <img class="img-popular" src="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre à l'Hôtel Tout bleu et Blanc">
+                  <img class="img-popular" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre à l'Hôtel Tout bleu et Blanc">
                   <div class="text-popular">
                     <h3>Hôtel Tout bleu et Blanc</h3>
                     <p>Nuit à partir de 68<strong>€</strong></p>
@@ -256,24 +259,24 @@
 <!---------card 1---------->
             <a class="link-activities" href="#">
               <article class="card-activities">
-                <img class="img-activities" src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                <img class="img-activities" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                 <h3>Vieux Port</h3>
               </article>
             </a>
 
 <!---------card 2 and 3 ---------->            
             <div class="duo-card-activities">
-              
+
               <a class="link-activities-2" href="#">
                 <article class="card-activities-2">
-                  <img class="img-activities" src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" >
+                  <img class="img-activities" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" >
                   <h3>Fort de Pomègues</h3>
                 </article>
               </a>
 
-              <a class="link-activities-2" href="#">
-                <article class="card-activities-2">
-                  <img class="img-activities" src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+              <a class="link-activities-3" href="#">
+                <article class="card-activities-3">
+                  <img class="img-activities" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                   <h3>Îles du Frioul</h3>
                 </article>
               </a>
@@ -282,23 +285,23 @@
 <!---------card 4 ---------->
               <a class="link-activities" href="#">
                 <article class="card-activities">
-                  <img class="img-activities" src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                  <img class="img-activities" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                   <h3>Parc National des Calanques</h3>
                 </article>
               </a>
 
 <!---------card 5 and 6---------->
             <div class="duo-card-activities">
-              <a class="link-activities-2" href="#">
-                <article class="card-activities-2">
-                  <img class="img-activities" src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde">
+              <a class="link-activities-4" href="#">
+                <article class="card-activities-4">
+                  <img class="img-activities" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde">
                   <h3>Notre-Dame-de-la-Garde</h3>
                 </article> 
               </a>
 
-              <a class="link-activities-2" href="#">
-                <article class="card-activities-2">
-                  <img class="img-activities" src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps">
+              <a class="link-activities-5" href="#">
+                <article class="card-activities-5">
+                  <img class="img-activities" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps">
                   <h3>Parc Longchamps</h3>
                 </article>
               </a>
