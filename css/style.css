@@ -317,20 +317,28 @@ label {
   background-color: white;
   border-radius: 20px;
   box-shadow: 1px 1px 10px gainsboro;
+  display: flex;
+  flex-direction: column;
 }
 
 .img-Marseille {
   width: 100%;
-  height: 60%;
+  height: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
   padding: 5px;
   box-sizing: border-box;
 }
 
+.picture-Marseille {
+  height: 60%;
+}
+
 .text-Marseille {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
+  flex: 1 1 40%;
 }
 
 .card-Marseille h3, .card-Marseille p {
@@ -377,8 +385,12 @@ label {
   aspect-ratio: 3/1;
 }
 
-.img-popular {
+.picture-popular {
   width: 33%;
+}
+
+.img-popular {
+  width: 100%;
   height: 100%;
   object-fit: cover;
   box-sizing: border-box;
