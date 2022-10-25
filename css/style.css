@@ -160,6 +160,10 @@ label {
   cursor: pointer;
 }
 
+#loupe {
+  display: none;
+}
+
 
 /**********FILTERS**********************/
 
@@ -320,7 +324,7 @@ label {
   height: 60%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
-  padding: 3px;
+  padding: 5px;
   box-sizing: border-box;
 }
 
@@ -346,13 +350,16 @@ label {
   align-items: baseline;
   justify-content: space-between;
 }
+.title-popular h2 {
+  padding-left: 10px;
+}
 
 .results-popular {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  padding: 20px 0;
+  padding: 25px 0;
   height: 100%;
 }
 
@@ -413,6 +420,9 @@ a:visited {
 /*****CLICK EFFECT*****/
 
 .link-Marseille:hover, .link-popular:hover {
+  opacity: 0.7;
+}
+.link-activities:hover, .link-activities-2:hover, .link-activities-3:hover, .link-activities-4:hover, .link-activities-5:hover {
   opacity: 0.7;
 }
 
@@ -655,7 +665,11 @@ footer li {
     padding-top: 0;
     padding-bottom: none;
   }
-
+  /*intro*/
+  #intro {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
   /*search*/
   #container-search {
     margin: 0 30px;
@@ -749,9 +763,8 @@ footer li {
   .title-popular h2 {
     padding: 20px;
   }
-
-  .link-popular {
-    
+  #results-popular {
+    padding-top: 0;
   }
   
 
@@ -761,13 +774,42 @@ footer li {
   }
   #results-activities {
     flex-direction: column;
+    height: 1360px;
   }
   .duo-card-activities {
     flex-basis: auto;
+    margin-bottom: 30px;
   }
-  .link-activities {
+  .link-activities, .link-activities-2, .link-activities-3, .link-activities-4, .link-activities-5 {
+    height: 200px;
+  }
 
+  /*images*/
+  .card-activities .img-activities {
+    height: 70%;
   }
+  .card-activities-2 .img-activities {
+    height: 70%;
+  }
+  .card-activities-3 .img-activities {
+    height: 70%;
+  }
+  .card-activities-4 .img-activities {
+    height: 70%;
+  }
+  .card-activities-5 .img-activities {
+    height: 70%;
+  }
+  .card-activities-6 .img-activities {
+    height: 70%;
+  }
+
+  #results-activities h3 {
+    margin-top: 15px;
+    padding-left: 15px;
+  }
+  
+  
 
   /*footer*/
   footer {
