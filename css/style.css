@@ -673,7 +673,7 @@ footer li {
     border-bottom: 3px #0065FC solid;
     border-top: none;
     padding-top: 0;
-    padding-bottom: none;
+    padding-bottom: 0;
   }
   /*intro*/
   #intro {
@@ -691,7 +691,7 @@ footer li {
     display: none;
   }
   .icon-search {
-    display: normal;
+    display: inline;
     color: white;
     background-color: #0065FC;
     border: 1px solid #0065FC;
