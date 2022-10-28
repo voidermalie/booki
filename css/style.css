@@ -600,7 +600,12 @@ footer li {
 }
 
 /******* MEDIA QUERY *******/
-
+/*deskstop*/
+@media screen and (min-width:1024px) {
+  .text-Marseille h3, .text-Marseille p {
+    font-size: 0.6rem;
+  }
+}
 /*medium devices-tablets*/
 @media screen and (max-width:992px) {
   #filters {
@@ -610,6 +615,7 @@ footer li {
     margin-top: 3px;
   }
 }
+
 
 /*small devices-iphone8*/
 @media screen and (max-width:768px) {
