@@ -826,8 +826,6 @@ footer li {
     padding-left: 15px;
   }
   
-  
-
   /*footer*/
   footer {
     flex-direction: column;
@@ -842,5 +840,4 @@ footer li {
   .footerblock {
     padding-bottom: 0;
   }
-
 }
