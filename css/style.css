@@ -6,44 +6,34 @@
 
 p {
   font-size: 0.8rem;
+  font-weight: 200;
 }
 
 h1 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
 h2 {
   font-size: 1rem;
   font-weight: 600;
-  color: black;
 }
 
 h3 {
   font-size: 0.8rem;
-  font-weight: bold;
-  color: black;
+  font-weight: 500;
 }
 
 ul {
-  color: black;
   font-size: 0.9rem;
+  font-weight: 400;
 }
-
-/*ATTENTION - ne pas toucher aux commentaires ci-dessous sinon gros bugs*/
-
-/*
-@media screen and (max-width: 1280px) {
-    /* Rédigez vos propriétés CSS ici */
-
-*/
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 
 body {
   max-width: 1440px;
@@ -59,7 +49,7 @@ main {
 #container-header {
   display: flex;
   justify-content: space-between;
-  margin: 0 40px;
+  margin: 15px 40px;
 }
 
 #main-nav {
@@ -96,29 +86,28 @@ nav ul {
   margin: 0 40px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
 #intro {
   display: flex;
   flex-direction: column;
-}
-
-#intro h1 {
-  margin-bottom: 0.5px;
+  gap: 5px;
 }
 
 /************SEARCHBOX******************************/
 
-
 #searchbox {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
 #searchbox .fa-location-dot {
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 15px 0px 0px 15px;
   padding: 13px;
 }
 
@@ -127,7 +116,7 @@ nav ul {
 }
 
 input {
-  height: 38px;
+  height: 44px;
   border: 2px solid #F2F2F2;
   outline: none;
   font-weight: bold;
@@ -153,7 +142,7 @@ label {
   font-size: 13px;
   padding: 12.5px;
   border: 2px solid #0065FC;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 15px 15px 0;
   cursor: pointer;
 }
 
@@ -164,6 +153,7 @@ label {
 
 /**********FILTERS**********************/
 
+
 #filters {
   display: flex;
   align-items: center;
@@ -173,18 +163,20 @@ label {
   margin-bottom: 15px;
 }
 
+
 #filters i {
   color: #0065FC;
   background-color: #DEEBFF;
-  width: 22px;
-  height: 22px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  padding: 10px;
+  padding: 8px;
   text-align: center;
   line-height: 18px;
   position: relative;
-  right: 10px;
+  right: 5px;
 }
+
 
 .filters-item {
   display: flex;
@@ -196,8 +188,7 @@ label {
 }
 
 .filters-item p {
-  font-weight: bold;
-  color: black;
+  font-weight: 500;
   font-size: 0.9rem;
   padding: 0 10px 0 0;
   margin: 7px;
@@ -248,8 +239,6 @@ label {
 #info p {
   display: flex;
   margin-left: 6px;
-  align-items: flex-end;
-  margin-bottom: 30px;
 }
 
 /**********************************************HOTELS*****************************************/
@@ -580,21 +569,19 @@ footer {
   display: flex;
   flex-direction: row;
 }
-
 .footerblock {
-  padding: 20px 40px;
+  padding: 40px;
   flex-basis: 30%;
 }
 .footerblock h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
-
 footer ul {
-  list-style-type: none;
-  padding-left: 0;
   font-size: 13px;
+  font-weight: 200;
 }
-
 footer li {
   margin-bottom: 10px;
 }
@@ -602,11 +589,12 @@ footer li {
 /******* MEDIA QUERY *******/
 /*deskstop*/
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width:1024px) {
   .text-Marseille h3, .text-Marseille p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
+
 /*medium devices-tablets*/
 @media screen and (max-width:992px) {
   #filters {
@@ -616,7 +604,6 @@ footer li {
     margin-top: 3px;
   }
 }
-
 
 /*small devices-iphone8*/
 @media screen and (max-width:768px) {
@@ -628,11 +615,8 @@ footer li {
     font-size: 1.4rem;
     font-weight: bold;
   }
-  h3 {
+  h3, p, ul {
     font-size: 1rem;
-  }
-  p {
-    font-size: 0.9rem;
   }
   #filters h3 {
     font-size: 1.1rem;
@@ -651,9 +635,7 @@ footer li {
     width: 100%;
   }
   #main-nav {
-    justify-content: space-around;
-    margin: 0 auto;
-    width: 100%;
+    margin: 10px 0 30px 0;
   }
   #main-nav ul {
     padding-left: 0;
@@ -663,8 +645,6 @@ footer li {
   #main-nav li {
     display: flex;
     flex: 1 1 50%;
-    justify-content: center;
-    align-items: center;
   }
   #main-nav a {
     display: flex;
@@ -673,7 +653,7 @@ footer li {
     border-bottom: 3px solid #F2F2F2;
     padding: 0;
     height: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   #main-nav a:hover {
     color: #0065FC;
@@ -682,17 +662,22 @@ footer li {
     padding-top: 0;
     padding-bottom: 0;
   }
+
   /*intro*/
   #intro {
-    margin-top: 10px;
     margin-right: 10px;
   }
+
   /*search*/
   #container-search {
-    margin: 0 30px;
+    margin: 0 30px 30px 30px;
+    gap: 20px;
   }
   #search-btn {
     font-size: 0.8rem;
+    border-radius: 15px 15px 15px 15px;
+    position: relative;
+    right: 10px;
   }
   #btn-rechercher {
     display: none;
@@ -707,27 +692,34 @@ footer li {
   }
   #searchbox {
     margin: 0 auto;
-    justify-content: stretch;
-  }
-  .fa-magnifying-glass {
-    display: inline;
   }
   #loupe {
     display: inline;
   }
-
+  #city {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 
   /*filters*/
   #filters {
     flex-wrap: wrap;
+    gap: 30px;
   }
   #filters h3 {
     width: 100%;
   }
-  .filters-item {
-    margin-right: 0px;
-    margin-bottom: 10px;
+  #filters i {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    right:10px;
   }
+  
+  .filters-item {
+    padding: 0;
+  }
+
 
   /**all hotels**/
   #container-all-hotels {
@@ -778,8 +770,9 @@ footer li {
     font-size: 1.3rem;
   }
   .title-popular h2 {
-    padding: 30px 0 0 25px;
+    padding: 30px 0 0 30px;
     margin: 0;
+    font-weight: 600;
   }
   #results-popular {
     padding: 30px 0;
