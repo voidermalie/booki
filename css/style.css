@@ -48,29 +48,24 @@ main {
   justify-content: space-between;
   margin: 15px 40px;
 }
-
 #main-nav {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
   font-weight: 500;
 }
-
 #logo img {
   width: 27%;
   margin: 30px 0 20px 0;
   padding: 0;
 }
-
 nav ul {
     list-style-type: none;
     display:  flex;
 }
-
 #main-nav a {
   padding: 0 25px;
 }
-
 #main-nav a:hover {
   color: #0065FC;
   border-top: 2.5px #0065FC solid;
@@ -85,7 +80,6 @@ nav ul {
   gap: 10px;
   margin-bottom: 30px;
 }
-
 #intro {
   display: flex;
   flex-direction: column;
@@ -98,18 +92,15 @@ nav ul {
   align-items: center;
   margin-top: 10px;
 }
-
 #searchbox .fa-location-dot {
   background-color: #F2F2F2;
   border: 1px solid #F2F2F2;
   border-radius: 15px 0px 0px 15px;
   padding: 13px;
 }
-
 #search-form {
   color: #F2F2F2;
 }
-
 input {
   height: 44px;
   border: 2px solid #F2F2F2;
@@ -117,11 +108,9 @@ input {
   font-weight: bold;
   padding-left: 10px;
 }
-
 input::placeholder {
   font-weight: bold;
 }
-
 label {
   display: none;
   border: solid 1px #F2F2F2;
@@ -129,7 +118,6 @@ label {
   font-weight: bold;
   color: black;
 }
-
 #search-btn {
   background-color: #0065FC;
   color: white;
@@ -140,7 +128,6 @@ label {
   border-radius: 0 15px 15px 0;
   cursor: pointer;
 }
-
 #loupe {
   display: none;
 }
@@ -154,7 +141,6 @@ label {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
 #filters i {
   color: #0065FC;
   background-color: #DEEBFF;
@@ -167,7 +153,6 @@ label {
   position: relative;
   right: 5px;
 }
-
 .filters-item {
   display: flex;
   align-items: center;
@@ -176,18 +161,15 @@ label {
   padding: 0.5px 5px 1px 1px;
   cursor: pointer;
 }
-
 .filters-item p {
   font-weight: 500;
   font-size: 0.9rem;
   padding: 0 10px 0 0;
   margin: 7px;
 }
-
 .filters-item i {
   align-items: flex-end;
 }
-
 #filters h3 {
   font-size: 0.9rem;
   margin-right: 10px;
@@ -197,7 +179,6 @@ label {
 #filters i:hover {
   color: pink;
 }
-
 .filters-item:hover {
   position: relative;
   bottom: 3px;
@@ -209,7 +190,6 @@ label {
   display: flex;
   align-items: baseline;
 }
-
 #info i {
   color: #0065FC;
   border: 1px solid #F2F2F2;
@@ -223,7 +203,6 @@ label {
   line-height: 2px;
   align-self: baseline;
 }
-
 #info p {
   display: flex;
   margin-left: 6px;
