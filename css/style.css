@@ -321,6 +321,7 @@ label {
   display: flex;
   width: 100%;
   aspect-ratio: 3/1;
+  box-shadow: 1px 1px 10px #F2F2F2;
 }
 .picture-popular {
   width: 33%;
@@ -513,20 +514,42 @@ footer li {
 }
 
 /******* MEDIA QUERY *******/
-/*deskstop*/
+/*ipad pro, small desktops?*/
 
 /*
-@media screen and (max-width:1024px) {
+@media screen and (min-width: 993px) and (max-width:1024px) {
   .text-Marseille h3, .text-Marseille p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
-}
+  .card-Marseille {
+    height: 110%;
+  }
+  .link-Marseille {
+    max-height: 100%;
+  }
 */
 
 /*medium devices-tablets*/
-@media screen and (max-width:992px) {
+@media screen and (min-width:769px) and (max-width:992px) {
   #filters {
     width: 100%;
+  }
+  .card-popular {
+    flex-direction: column;
+  }
+  .picture-popular {
+    width: 100%;
+    max-height: 50%;
+  }
+  .img-popular {
+    border-radius: 15px 15px 0 0;
+  }
+  .text-popular {
+    width: 100%;
+  }
+  .text-popular h3, .text-popular p {
+    font-size: 0.8rem;
+    padding: 3px 2px 0 10px;
   }
   #results-activities h3 {
     margin-top: 3px;
