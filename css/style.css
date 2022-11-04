@@ -175,7 +175,7 @@ label {
   margin-right: 10px;
 }
 
-/***CLICK EFFECT***/
+/*CLICK EFFECT*/
 #filters i:hover {
   color: pink;
 }
@@ -185,7 +185,7 @@ label {
   box-shadow: 3px 3px 10px gainsboro;
 }
 
-/*******************INFO*************************/
+/*INFO*/
 #info {
   display: flex;
   align-items: baseline;
@@ -208,7 +208,7 @@ label {
   margin-left: 6px;
 }
 
-/**********************************************HOTELS*****************************************/
+/*HOTELS*/
 #container-all-hotels {
   margin: 0 40px;
   display: flex;
@@ -240,7 +240,7 @@ label {
   padding: 20px;
 }
 
-/*****************MARSEILLE********************/
+/*MARSEILLE*/
 .results-Marseille {
   display: flex;
   flex-wrap: wrap;
@@ -292,7 +292,7 @@ label {
   margin-top: 15px;
 }
 
-/********************************************MOST POPULAR*************************************/
+/*MOST POPULAR*/
 .title-popular {
   display: flex;
   align-items: baseline;
@@ -348,7 +348,7 @@ label {
   padding: 10px 0 0 15px;
 }
 
-/************LIENS*************/
+/*LIENS*/
 a {
   text-decoration: none;
   color: initial;
@@ -360,7 +360,7 @@ a:visited {
   color: #000000;
 }
 
-/*****CLICK EFFECT*****/
+/*CLICK EFFECT*/
 .link-Marseille:hover, .link-popular:hover {
   opacity: 0.7;
 }
@@ -513,7 +513,7 @@ footer li {
   margin-bottom: 10px;
 }
 
-/******* MEDIA QUERY *******/
+/*MEDIA QUERY*/
 /*ipad pro, small desktops?*/
 
 /*
